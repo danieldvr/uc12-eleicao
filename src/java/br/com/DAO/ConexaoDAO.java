@@ -14,12 +14,12 @@ import java.sql.SQLException;
  * @author sala19a
  */
 public class ConexaoDAO {
-        Connection con=null;
+    Connection con=null;
     
     public Connection conexaoBD() throws ClassNotFoundException{
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/daniel?user=root&password=";
+            String url = "jdbc:mysql://localhost:3306/edgar?user=root&password=";
             con= DriverManager.getConnection(url);
         } catch (SQLException e) {
         }
@@ -28,5 +28,3 @@ public class ConexaoDAO {
 }
     
 }
-    
-
